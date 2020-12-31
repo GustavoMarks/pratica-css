@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+}
+
+.fixed-header{
+  background-color: black;
+  text-decoration: none;
+  position: fixed;
+  width: 100vw;
+  padding: 10px;
+}
+
+.fixed-header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fixed-header li {
+  display: block;
+  padding: 8px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.fixed-header li:hover {
+  background-color: red;
+}
+
+.fixed-header li a {
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  transition: all 2s;
+}
+
+.dropbtn {
+  color: white;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+}
+
+.dropbtn:hover ~ .dropdown-content, .dropdown-content:hover{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(63, 26, 26, 0.2);
+  margin: 2px 0 0 -8px ;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.conteudo img {
+  display: flex;
+  border-radius: 10px;
+  align-self: center;
+  width: 60%;
+  margin: 80px 0 40px 0;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+.centralizado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.secoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 25%;
+  text-align: center;
+  color: white;
+  background-color: #506380;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.secoes a {
+  text-decoration: none;
+}
+
+.botao {
+  display: block;
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  color: black;
+}
+
+.botao:hover {
+  background-color: orange;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: justify;
+}
+
+.titulo {
+  text-decoration: underline 3px orange;
+}
+
+.fixed-footer{
+  background-color: black;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  padding: 10px;
+  bottom: 0;
+}
